@@ -1,0 +1,9 @@
+<h1><%= @product.name %></h1>
+
+<% if @product.status? %>
+	<p>Jest</p>
+<% else %>
+	<p>Nie ma</p>
+<% end %>
+
+<p><%= link_to "Zmień status", toggle_status_path(@product) %></p>
